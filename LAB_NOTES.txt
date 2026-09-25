@@ -1,0 +1,25 @@
+Vertex AI travel chatbot lab
+
+Project ID: alpine-listener-509701-r8
+Main app file: /home/manics28b/wanderbot/app.py
+Packages: google-genai, streamlit, requests
+
+What I built:
+A Streamlit travel chatbot connected to Gemini on Vertex AI,
+with chat instructions and a function for current temperature.
+
+Problems I fixed:
+- Added the missing space in gcloud config set project.
+- Activated .venv so Python could find Streamlit.
+- Created requirements.txt and installed the packages.
+- Ran the correct app.py instead of the file in a second wanderbot folder.
+- Fixed indentation and completed the missing client and chat code.
+- Refreshed Cloud Shell and Streamlit when the preview did not open.
+- Changed the Web Preview port when previous ports were occupied.
+
+To run it again:
+1. Open Cloud Shell.
+2. cd /home/manics28b/wanderbot
+3. source .venv/bin/activate
+4. python -m streamlit run /home/manics28b/wanderbot/app.py --browser.serverAddress=localhost --server.enableCORS=false --server.enableXsrfProtection=false --server.port=8090
+5. Open Web Preview and select port 8090.
